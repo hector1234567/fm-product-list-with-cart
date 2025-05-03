@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "Red Hat";
+  src: url(/assets/fonts/RedHatText-VariableFont_wght.ttf);
+}
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: aqua;
+  font-family: "Red Hat", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
