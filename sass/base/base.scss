@@ -14,4 +14,11 @@ body {
   font-family: $font, serif;
   font-size: 1.6rem;
   font-weight: $Regular;
+  color: $Rose-900;
+  background-color: $Rose-50;
+
+  display: grid;
+  grid-template-columns: 1fr 80rem 38.4rem 1fr;
+  gap: 3.2rem;
+  padding: 8.8rem 0;
 }

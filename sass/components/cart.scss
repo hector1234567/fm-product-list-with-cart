@@ -1,0 +1,27 @@
+.cart {
+  width: 100%;
+  background-color: $White;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: $Bold;
+    color: $Red;
+    margin-bottom: 2.4rem;
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6rem;
+    gap: 1.6rem;
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-weight: $Semi-Bold;
+    color: $Rose-500;
+  }
+}

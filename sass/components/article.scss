@@ -1,0 +1,48 @@
+.article {
+  position: relative;
+
+  &__image {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    height: 24rem;
+    margin-bottom: 3.8rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__add-to-cart-button {
+    font-size: 1.4rem;
+    font-weight: $Semi-Bold;
+    position: absolute;
+    top: 24rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: $White;
+    height: 4.4rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border: 0.1rem solid $Rose-400;
+    border-radius: 5rem;
+  }
+
+  &__section {
+    font-size: 1.4rem;
+    font-weight: $Regular;
+    color: $Rose-500;
+  }
+
+  &__name {
+    font-weight: $Semi-Bold;
+  }
+
+  &__price {
+    font-weight: $Semi-Bold;
+    color: $Red;
+  }
+}
