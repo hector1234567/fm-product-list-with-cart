@@ -1,9 +1,27 @@
 .articles {
   grid-row: 2/3;
-  grid-column: 2/3;
+  grid-column: 1/2;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 25rem);
   column-gap: 2.4rem;
   row-gap: 3.2rem;
+
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(2, 25rem);
+  }
+
+  @media (max-width: $Tablet) {
+    grid-template-columns: repeat(3, 21.333rem);
+    grid-column: 1/2;
+    row-gap: 2.4rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 21.333rem);
+  }
+
+  @media (max-width: $Mobile) {
+    grid-template-columns: auto;
+  }
 }

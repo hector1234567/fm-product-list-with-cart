@@ -16,38 +16,40 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__heading">Desserts</h1>
-    </header>
-    <main class="articles">
-      <article class="article">
-        <figure class="article__image">
-          <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-        </figure>
-        <button class="article__add-to-cart-button">
-          <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-          <span>Add to Cart</span>
-        </button>
-        <div class="article__content">
-          <span class="article__section">Waffle</span>
-          <h2 class="article__name">Waffle with Berries</h2>
-          <span class="article__price">$6.50</span>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__heading">Desserts</h1>
+      </header>
+      <main class="articles">
+        <article class="article">
+          <figure class="article__image">
+            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
+          </figure>
+          <button class="article__add-to-cart-button">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
+            <span>Add to Cart</span>
+          </button>
+          <div class="article__content">
+            <span class="article__section">Waffle</span>
+            <h2 class="article__name">Waffle with Berries</h2>
+            <span class="article__price">$6.50</span>
+          </div>
+        </article>
+      </main>
+      <aside class="aside">
+        <div class="cart">
+          <h3 class="cart__heading">
+            Your Cart (<span class="cart__quantity">0</span>)
+          </h3>
+          <figure class="cart__image">
+            <img
+              src="assets/images/illustration-empty-cart.svg"
+              alt="Empty Cart"
+            />
+            <figcaption>Your added items will appear here</figcaption>
+          </figure>
         </div>
-      </article>
-    </main>
-    <aside class="aside">
-      <div class="cart">
-        <h3 class="cart__heading">
-          Your Cart (<span class="cart__quantity">0</span>)
-        </h3>
-        <figure class="cart__image">
-          <img
-            src="assets/images/illustration-empty-cart.svg"
-            alt="Empty Cart"
-          />
-          <figcaption>Your added items will appear here</figcaption>
-        </figure>
-      </div>
-    </aside>
+      </aside>
+    </div>
   </body>
 </html>

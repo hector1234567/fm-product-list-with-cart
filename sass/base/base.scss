@@ -1,3 +1,7 @@
+// $Tablet: 768px;
+$Tablet: 890px;
+$Mobile: 442px;
+
 *,
 *:before,
 *::after {
@@ -8,6 +12,30 @@
 
 html {
   font-size: 62.5%;
+
+  @media (max-width: 1010px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: $Tablet) {
+    font-size: 62.5%;
+  }
+
+  @media (max-width: 498px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: $Mobile) {
+    font-size: 62.5%;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 254px) {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -16,9 +44,26 @@ body {
   font-weight: $Regular;
   color: $Rose-900;
   background-color: $Rose-50;
-
-  display: grid;
-  grid-template-columns: 1fr 80rem 38.4rem 1fr;
-  gap: 3.2rem;
+  display: flex;
+  justify-content: center;
   padding: 8.8rem 0;
+
+  @media (max-width: $Tablet) {
+    padding: 4rem 0;
+  }
+
+  @media (max-width: $Mobile) {
+    padding: 2.4rem;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: min-content 38.4rem;
+  gap: 3.2rem;
+
+  @media (max-width: $Tablet) {
+    grid-template-columns: auto;
+    column-gap: 0;
+  }
 }

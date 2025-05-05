@@ -6,9 +6,24 @@
     overflow: hidden;
     height: 24rem;
     margin-bottom: 3.8rem;
+    width: 100%;
+    position: relative;
 
     img {
-      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+
+      @media (max-width: $Mobile) {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $Tablet) {
+      height: 21.2rem;
     }
   }
 
@@ -29,6 +44,10 @@
     gap: 0.8rem;
     border: 0.1rem solid $Rose-400;
     border-radius: 5rem;
+
+    @media (max-width: $Tablet) {
+      top: 21.2rem;
+    }
   }
 
   &__section {
@@ -39,6 +58,10 @@
 
   &__name {
     font-weight: $Semi-Bold;
+
+    @media (max-width: $Tablet) {
+      font-size: 1.6rem;
+    }
   }
 
   &__price {
