@@ -152,12 +152,6 @@ body {
   transform: translate(-50%, -50%);
   height: 100%;
 }
-@media (max-width: 442px) {
-  .article__image img {
-    height: auto;
-    width: 100%;
-  }
-}
 @media (max-width: 890px) {
   .article__image {
     height: 21.2rem;
