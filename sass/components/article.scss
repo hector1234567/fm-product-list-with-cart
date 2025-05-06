@@ -62,10 +62,7 @@
 
   &__name {
     font-weight: $Semi-Bold;
-
-    @media (max-width: $Tablet) {
-      font-size: 1.6rem;
-    }
+    font-size: 1.6rem;
   }
 
   &__price {

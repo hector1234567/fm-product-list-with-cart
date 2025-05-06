@@ -45,15 +45,8 @@ body {
   background-color: $Rose-50;
   display: flex;
   justify-content: center;
-  padding: 8.8rem 0;
-
-  @media (max-width: $Tablet) {
-    padding: 4rem 0;
-  }
-
-  @media (max-width: $Mobile) {
-    padding: 2.4rem;
-  }
+  position: relative;
+  min-height: 100dvh;
 }
 
 .container {
@@ -61,9 +54,15 @@ body {
   grid-template-columns: min-content 38.4rem;
   grid-template-rows: 4.8rem auto auto;
   gap: 3.2rem;
+  margin: 8.8rem 0;
 
   @media (max-width: $Tablet) {
+    margin: 4rem 0;
     grid-template-columns: auto;
     column-gap: 0;
+  }
+
+  @media (max-width: $Mobile) {
+    margin: 2.4rem;
   }
 }
