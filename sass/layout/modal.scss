@@ -81,6 +81,13 @@
       background-color: darken($Red, 10%);
     }
   }
+
+  @media (max-width: $Mobile) {
+    top: unset;
+    bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+    transform: translateX(-50%);
+  }
 }
 
 .overlay {
