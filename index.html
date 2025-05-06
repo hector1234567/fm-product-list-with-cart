@@ -23,16 +23,19 @@
       <main class="articles">
         <article class="article">
           <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" 
-            srcset="
-            assets/images/image-brownie-mobile.jpg 654w, 
-            assets/images/image-cake-tablet.jpg 424w, 
-            assets/images/image-waffle-desktop.jpg 480w"
-            sizes="
+            <img
+              src="assets/images/image-waffle-desktop.jpg"
+              alt="waffle"
+              srcset="
+                assets/images/image-waffle-mobile.jpg  654w,
+                assets/images/image-waffle-tablet.jpg  424w,
+                assets/images/image-waffle-desktop.jpg 480w
+              "
+              sizes="
             (max-width: 442px) 95vw,
             (max-width: 890px) 213px,
             250px"
-          />
+            />
           </figure>
           <button class="article__add-to-cart-button">
             <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
@@ -44,304 +47,53 @@
             <span class="article__price">$6.50</span>
           </div>
         </article>
-        <article class="article">
+        <article class="article active">
           <figure class="article__image">
             <img
-                srcset="
-                assets/images/image-waffle-desktop.jpg 213w,
-                assets/images/image-brownie-mobile.jpg 214w,
-                assets/images/image-cake-tablet.jpg 215w
-                "
-                sizes="(max-width: 320px),
-                          (max-width: 480px),
-                          800px"
-                src="assets/images/image-cake-tablet.jpg"
-                alt="Elva dressed as a fairy" />
+              src="assets/images/image-brownie-desktop.jpg"
+              alt="waffle"
+              srcset="
+                assets/images/image-brownie-mobile.jpg  654w,
+                assets/images/image-brownie-tablet.jpg  424w,
+                assets/images/image-brownie-desktop.jpg 480w
+              "
+              sizes="
+            (max-width: 442px) 95vw,
+            (max-width: 890px) 213px,
+            250px"
+            />
           </figure>
-          <button class="article__add-to-cart-button">
+          <!-- <button class="article__add-to-cart-button">
             <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
             <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
+          </button> -->
+          <div class="article__quantity-buttons">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="none"
+                viewBox="0 0 10 2"
+              >
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <span class="article__quantity">0</span>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="none"
+                viewBox="0 0 10 10"
+              >
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"
+                />
+              </svg>
+            </button>
           </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
-          <div class="article__content">
-            <span class="article__section">Waffle</span>
-            <h2 class="article__name">Waffle with Berries</h2>
-            <span class="article__price">$6.50</span>
-          </div>
-        </article>
-        <article class="article">
-          <figure class="article__image">
-            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle" />
-          </figure>
-          <button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>
           <div class="article__content">
             <span class="article__section">Waffle</span>
             <h2 class="article__name">Waffle with Berries</h2>
@@ -350,17 +102,115 @@
         </article>
       </main>
       <aside class="aside">
-        <div class="cart">
+        <div class="cart active">
           <h3 class="cart__heading">
             Your Cart (<span class="cart__quantity">0</span>)
           </h3>
-          <figure class="cart__image">
+          <figure class="cart__empty-image">
             <img
               src="assets/images/illustration-empty-cart.svg"
               alt="Empty Cart"
             />
             <figcaption>Your added items will appear here</figcaption>
           </figure>
+          <ul class="cart__list">
+            <li class="cart-element">
+              <span class="cart-element__heading">Classic Tiramisu</span>
+              <div class="cart-element__info">
+                <span class="cart-element__quantity">1x</span>
+                <span class="cart-element__unit-price">@$5.50</span>
+                <span class="cart-element__total-price">$5.50</span>
+              </div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path
+                    d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="cart-element">
+              <span class="cart-element__heading">Classic Tiramisu</span>
+              <div class="cart-element__info">
+                <span class="cart-element__quantity">1x</span>
+                <span class="cart-element__unit-price">@$5.50</span>
+                <span class="cart-element__total-price">$5.50</span>
+              </div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path
+                    d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="cart-element">
+              <span class="cart-element__heading">Classic Tiramisu</span>
+              <div class="cart-element__info">
+                <span class="cart-element__quantity">1x</span>
+                <span class="cart-element__unit-price">@$5.50</span>
+                <span class="cart-element__total-price">$5.50</span>
+              </div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path
+                    d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="cart-element">
+              <span class="cart-element__heading">Classic Tiramisu</span>
+              <div class="cart-element__info">
+                <span class="cart-element__quantity">1x</span>
+                <span class="cart-element__unit-price">@$5.50</span>
+                <span class="cart-element__total-price">$5.50</span>
+              </div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="none"
+                  viewBox="0 0 10 10"
+                >
+                  <path
+                    d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="cart__order-total">
+            <span class="cart__order-total-text">OrderTotal</span>
+            <span class="cart__order-total-value">$46.50</span>
+          </div>
+          <div class="cart__badge">
+            <img
+              src="assets/images/icon-carbon-neutral.svg"
+              alt="Carbon Neutral"
+            />
+            <span>This is a <strong>carbon-neutral</strong> delivery</span>
+          </div>
+          <button class="cart__button">Confirm Order</button>
         </div>
       </aside>
     </div>

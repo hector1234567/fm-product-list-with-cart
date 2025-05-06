@@ -4,14 +4,17 @@
   border-radius: 1.2rem;
   padding: 2.4rem;
 
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
   &__heading {
     font-size: 2.4rem;
     font-weight: $Bold;
     color: $Red;
-    margin-bottom: 2.4rem;
   }
 
-  &__image {
+  &__empty-image {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,5 +26,69 @@
     font-size: 1.4rem;
     font-weight: $Semi-Bold;
     color: $Rose-500;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__order-total-text {
+    font-size: 1.4rem;
+    font-weight: $Regular;
+  }
+
+  &__order-total-value {
+    font-size: 2.4rem;
+    font-weight: $Bold;
+  }
+
+  &__badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    height: 5.2rem;
+    border-radius: 0.8rem;
+    background-color: $Rose-50;
+    font-size: 1.4rem;
+    font-weight: $Regular;
+
+    strong {
+      font-weight: $Semi-Bold;
+    }
+  }
+
+  &__button {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: $Semi-Bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5.3rem;
+    background-color: $Red;
+    color: $White;
+    border: none;
+    border-radius: 6rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($Red, 10%);
+    }
+  }
+
+  &.active {
+    .cart__empty-image {
+      display: none;
+    }
   }
 }

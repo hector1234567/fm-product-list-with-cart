@@ -14,7 +14,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 100%
+      height: 100%;
+      z-index: -1;
     }
 
     @media (max-width: $Tablet) {
@@ -25,6 +26,7 @@
   &__add-to-cart-button {
     font-size: 1.4rem;
     font-weight: $Semi-Bold;
+    font-family: inherit;
     position: absolute;
     top: 24rem;
     left: 50%;
@@ -39,9 +41,16 @@
     gap: 0.8rem;
     border: 0.1rem solid $Rose-400;
     border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
     @media (max-width: $Tablet) {
       top: 21.2rem;
+    }
+
+    &:hover {
+      color: $Red;
+      border: 0.1rem solid $Red;
     }
   }
 
@@ -62,5 +71,63 @@
   &__price {
     font-weight: $Semi-Bold;
     color: $Red;
+  }
+
+  &__quantity-buttons {
+    font-size: 1.4rem;
+    font-weight: $Semi-Bold;
+    position: absolute;
+    top: 24rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: $Red;
+    color: $White;
+    height: 4.4rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    gap: 0.8rem;
+    border-radius: 5rem;
+
+    @media (max-width: $Tablet) {
+      top: 21.2rem;
+    }
+
+    button {
+      background-color: $Red;
+      color: $White;
+      font-family: inherit;
+      width: 2rem;
+      height: 2rem;
+      border: 0.15rem solid $White;
+      border-radius: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      svg {
+        fill: $White;
+      }
+
+      &:hover {
+        background-color: $White;
+
+        svg {
+          fill: $Red;
+        }
+      }
+    }
+  }
+
+  &.active {
+    .article__image {
+      box-shadow: inset 0 0 0 0.25rem $Red;
+    }
   }
 }

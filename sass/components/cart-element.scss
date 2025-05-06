@@ -1,0 +1,73 @@
+.cart-element {
+  position: relative;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 0.1rem solid $Rose-100;
+
+  &:not(:first-child) {
+    margin-top: 1.6rem;
+  }
+
+  &:last-child {
+    padding-bottom: 2.4rem;
+  }
+
+  &__heading {
+    font-weight: $Semi-Bold;
+  }
+
+  &__info {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__quantity {
+    font-weight: $Semi-Bold;
+    padding-right: 0.8rem;
+    color: $Red;
+  }
+
+  &__unit-price {
+    font-weight: $Regular;
+    color: $Rose-500;
+  }
+
+  &__total-price {
+    font-weight: $Semi-Bold;
+    color: $Rose-500;
+  }
+
+  button {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 2rem;
+    background-color: $White;
+    border: 0.15rem solid $Rose-400;
+    position: absolute;
+    right: 0;
+    top: 1.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+      fill: $Rose-400;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      border: 0.15rem solid $Rose-900;
+
+      svg {
+        fill: $Rose-900;
+      }
+    }
+  }
+}
