@@ -7,7 +7,6 @@ class ProductView {
   }
 
   render(data) {
-    console.log(this);
     this._data = data;
     this._parentEl.innerHTML = "";
     this._parentEl.insertAdjacentHTML("beforeend", this._generateMarkup());
@@ -33,7 +32,29 @@ class ProductView {
           </figure>
           ${
             quantity > 0
-              ? `<div class="article__quantity-buttons">
+              ? this._generateQuantityButtons()
+              : this._generateSelectButton()
+          }
+          
+          <div class="article__content">
+            <span class="article__section">${category}</span>
+            <h2 class="article__name">${name}</h2>
+            <span class="article__price">$${Number(price).toFixed(2)}</span>
+          </div>
+        `;
+    return html;
+  }
+
+  _generateSelectButton() {
+    return `<button class="article__add-to-cart-button">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
+            <span>Add to Cart</span>
+          </button>`;
+  }
+
+  _generateQuantityButtons() {
+    const { quantity } = this._data;
+    return `<div class="article__quantity-buttons">
             <button class="article__quantity-button--sub">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,20 +80,7 @@ class ProductView {
                 />
               </svg>
             </button>
-          </div>`
-              : `<button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
-            <span>Add to Cart</span>
-          </button>`
-          }
-          
-          <div class="article__content">
-            <span class="article__section">${category}</span>
-            <h2 class="article__name">${name}</h2>
-            <span class="article__price">$${price}</span>
-          </div>
-        `;
-    return html;
+          </div>`;
   }
 
   addHandlerUpdateProductQty(handler) {

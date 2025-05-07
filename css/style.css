@@ -139,7 +139,7 @@ body {
 
 .modal {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -532,6 +532,22 @@ body {
 .order-element__total-price {
   font-weight: 600;
   margin-left: auto;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 3.4px;
+  background: radial-gradient(farthest-side, hsl(14, 86%, 42%) 95%, rgba(0, 0, 0, 0)) 50% 0/13.4px 13.4px no-repeat, radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 5.6px), hsl(14, 86%, 42%) calc(100% - 4.5px)) content-box;
+  animation: spinner-x3enp9 1.5s infinite;
+  margin: auto;
+}
+
+@keyframes spinner-x3enp9 {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
