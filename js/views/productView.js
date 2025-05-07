@@ -47,7 +47,7 @@ class ProductView {
 
   _generateSelectButton() {
     return `<button class="article__add-to-cart-button">
-            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart" />
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to cart ${name}" />
             <span>Add to Cart</span>
           </button>`;
   }
