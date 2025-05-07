@@ -4,7 +4,7 @@ class ProductListView {
 
   render(data) {
     this._data = data;
-    this._parentEl.html = "";
+    this._parentEl.innerHTML = "";
     this._parentEl.insertAdjacentHTML("beforeend", this._generateMarkup());
   }
 
