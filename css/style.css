@@ -76,6 +76,10 @@ body {
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 .header {
   grid-row: 1/2;
   grid-column: 1/2;
